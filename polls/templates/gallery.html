@@ -1,0 +1,29 @@
+{% extends 'template.html' %}
+{% block body %}
+<body>
+<div class="container">
+    <img src="../static/polls/img/gal1.jpeg" alt="Image 1">
+    <img src="../static/polls/img/gal2.jpeg" alt="Image 2">
+    <img src="../static/polls/img/gal3.jpeg" alt="Image 3">
+    <img src="../static/polls/img/gal4.jpeg" alt="Image 4">
+    <img src="../static/polls/img/gal5.jpeg" alt="Image 5">
+    <img src="../static/polls/img/gal6.jpeg" alt="Image 6">
+    <img src="../static/polls/img/wolf.jpg" alt="Image 7">
+</div>
+</body>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+</style>
+
+
+{% endblock %}

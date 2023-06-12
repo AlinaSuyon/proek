@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Главная страница</title>
+</head>
+
+<header>
+    <div class="logo">
+        <a>
+            <img src="../static/polls/img/logo.png" width="60px" height="60px"/>
+        </a>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="/about">Продукция</a></li>
+            <li><a href="/contacts">Контакты</a></li>
+            <li><a href="/main">Главная страница</a></li>
+            <li><a href="/gallery">Галерея</a></li>
+
+        </ul>
+    </div>
+    <div class="tel">
+        <a href="tel:+79183522861">+7 (918) 352 28 61</a>
+    </div>
+</header>
+
+<footer>
+    <div class="container">
+        <p> Некоторые картинки защищены авторским правом. Все претензии принимаются в мордобое по адресу г. Москва,
+            ул. Пушкина, д. 1 </p>
+    </div>
+</footer>
+
+<body>
+{% block body %}
+{% endblock %}
+</body>
+
+</html>
+
+
+<style>
+    header {
+        background-color: #e1a5a5;
+    }
+
+    .body.content {
+        background-color: bisque;
+        height: 100%;
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .menu {
+        flex-grow: 1;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-flow: row nowrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .menu li {
+        margin-right: 50px;
+    }
+
+    .menu li:last-child {
+        margin-right: 0;
+    }
+
+    .menu a {
+        padding: 8px 10px;
+    }
+
+    .logo {
+        margin-right: 30px;
+    }
+
+    .menu a,
+    .menu .active {
+        display: block;
+        padding: 8px 10px;
+    }
+
+    .menu .active {
+        color: #fff;
+        background: black;
+        border-radius: 8px;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        list-style: none;
+    }
+
+    .menu a,
+    .menu .active {
+        display: block;
+        padding: 8px 10px;
+        text-transform: uppercase;
+        letter-spacing: .27em;
+    }
+
+
+    .menu a {
+        color: #ffffff;
+        text-dicoration: none;
+    }
+
+    .tel {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .tel a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+
+
+    footer {
+        opacity: 0.6;
+        position: fixed;
+        left: 0px;
+        height: 30px;
+        width: 100%;
+        bottom: 0px;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        transition: bottom 0.3s ease-in-out;
+    }
+
+
+
+
+</style>
+

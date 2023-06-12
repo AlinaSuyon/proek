@@ -1,0 +1,73 @@
+{% extends 'template.html' %}
+{% block body %}
+
+<body>
+<div class="telefona">
+  <img src="../static/polls/img/telefon.png">
+
+</div>
+<div class="text">
+  <li>
+    <span>Улица Пушкина, дом Колотушкина</span>
+
+  </li>
+</div>
+
+<div class="tela">
+  <li>
+    <a href="tel:+723456789">+7 (234) 567-89</a>
+  </li>
+</div>
+<div class="email">
+  <li>
+    <a href="mailto:comix@jopa.com">comix@jopa.com</a>
+  </li>
+</div>
+<style>
+  .telefona {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+ body {
+   background-color: #ffffff;
+ }
+
+  .text {
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    font-family: "cursive";
+    font-size: 20px;
+  }
+
+  .tela {
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    font-family: "cursive";
+    font-size: 20px;
+  }
+
+  .email {
+    color: white;
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    font-family: "cursive";
+    font-size: 20px;
+  }
+
+  a:link, a:visited {
+    color: #ffd63b;
+  }
+</style>
+
+</body>
+
+{% endblock %}
